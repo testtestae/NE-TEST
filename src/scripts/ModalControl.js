@@ -1,16 +1,18 @@
 export const ModalControl = class {
-    constructor(modalElement){
+    constructor (modalElement) {
         this.modal = modalElement
     }
-    closeModal() {
-        this.modal.style.display="none"
-        document.querySelector(".modal #name").value = ""
-        document.querySelector(".modal #email").value = ""
-        document.querySelector(".modal #message").value = ""
+
+    closeModal () {
+        this.modal.style.display = 'none'
+        document.querySelector('.modal #name').value = ''
+        document.querySelector('.modal #email').value = ''
+        document.querySelector('.modal #message').value = ''
         document.body.style.overflowY = ''
     }
-    openModal() {
-        this.modal.style.display="flex";
+
+    openModal () {
+        this.modal.style.display = 'flex'
         document.body.style.overflowY = 'hidden'
     }
 }
