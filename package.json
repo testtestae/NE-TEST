@@ -1,0 +1,32 @@
+{
+  "name": "test2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "eslint": "eslint"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true
+    },
+    "rules": {
+      "no-var": "error",
+      "semi": "error",
+      "indent": "error",
+      "no-multi-spaces": "error",
+      "space-in-parens": "error",
+      "no-multiple-empty-lines": "error",
+      "prefer-const": "error",
+      "no-use-before-define": "error"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "sass": "^1.66.1",
+    "vite": "^4.4.5"
+  }
+}

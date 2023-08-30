@@ -1,0 +1,38 @@
+.what-we-do
+    box-sizing: content-box
+    @media screen and (max-width: 760px)
+        display: flex
+        flex-direction: column
+    @media screen and (min-width: 761px)
+        display: grid
+        gap: 2vw
+        grid-template-rows: 1rem repeat(6, 7.5rem)
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-areas: "title ." "title card1" "card2 card1" "card2 card1" "card2 card1" "card2 card3" ". card3" ". card3"  
+    &__title
+        grid-area: title
+        margin-right: 1rem
+        margin-down: 1rem
+    &__card1
+        grid-area: card1
+    &__card2
+        grid-area: card2
+    &__card3
+        grid-area: card3
+    .card
+        display: grid
+        grid-template-rows: 8rem 8rem 8rem 3.5rem 1.25rem
+        align-items: center
+        justify-self: center
+        align-self: center
+        width: 70vw
+        max-width: 18rem
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+        padding: 1em
+        @media screen and (max-width: 410px)
+            max-width:12rem
+        > *
+            margin: 0
+        > img
+            max-width: 100%  

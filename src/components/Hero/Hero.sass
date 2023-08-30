@@ -1,0 +1,72 @@
+.hero
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    max-width: 100%
+    box-sizing: border-box
+    // flex-wrap: nowrap
+    @media screen and (max-width: 992px) 
+        flex-direction: column
+        justify-content: space-around
+        text-align: center
+        &__illustration
+            img
+                max-height: 500px
+        @media screen and (max-height: 800px)
+            &__illustration
+                img
+                    display: none
+    &__text
+        > h1
+            font-size: 5rem
+            @media screen and (max-width: 1400px) 
+                font-size: 4rem
+            @media screen and (max-width: 1200px) 
+                font-size: 3.5rem
+            @media screen and (max-width: 992px) 
+                font-size: 4rem
+            @media screen and (max-width: 768px) 
+                font-size: 3.5rem
+            @media screen and (max-width: 576px) 
+                font-size: 2rem
+            @media screen and (max-width: 480px) 
+                font-size: 1.75rem
+
+
+    &__illustration
+            img
+                max-width: 100%
+                // @media screen and (max-width: 1000px) 
+                //     width: 50%
+
+    
+// .hero
+//     background: linear-gradient(0deg, rgba(152, 195, 232, 0.4) 8.84%, rgba(152, 195, 232, 0) 31.12%)
+//     display: flex
+//     justify-content: space-between
+//     align-items: center
+//     flex-wrap: wrap
+//     > *
+//         width: 100%
+//         // max-width: 600px
+//         // display: inline
+//         display: flex
+//         flex-direction: column
+//         box-sizing: content-box
+//         @media screen and (max-width: 1000px) 
+//             width: 100%
+//         > .payload
+//             display: flex
+//             flex-direction: column
+//             box-sizing: content-box
+//     &__text 
+//         > h1
+//             @media screen and (max-width: 880px)
+//                 font-size: 3rem
+//             @media screen and (max-width: 420px)
+//                 font-size: 2rem
+//     &__illustration
+//         width: calc(50% + 20vw)
+//         max-height: 100vh
+//         transform: translateY(3rem)
