@@ -1,0 +1,12 @@
+{
+    "extends": ["stylelint-config-standard-scss", "stylelint-config-sass-recommended"],
+    "rules": {
+        "selector-max-compound-selectors": 4,
+        "value-no-vendor-prefix": null,
+        "block-no-empty": true,
+        "shorthand-property-no-redundant-values": true,
+        "color-named": "never",
+        "property-no-unknown": true,
+        "indentation": 4
+    }
+}
